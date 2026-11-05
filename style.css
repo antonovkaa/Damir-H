@@ -59,14 +59,25 @@ font-weight: 200;
      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIW8Lbq__2ADapa-L6f-NpdlcyNWKD3dRJw2-AHWPnkA&s=10zz");
      height: 400px;
      margin: 50px;}
-   .box-3 {
+.box-3 {
      width:40%;
      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBDmGvRucCKx2HJjLe6jHuAqEQRjOupYJCjpTRkmGydQKG6Ntws8I1UM8&s=10");
      height: 400px;
-     margin: 50px;
+     margin: 50px; }
   
   
-  
+  .falling-emoji {
+    position: absolute;
+    top: -50px;
+    animation-name: fall;
+    animation-timing-function: linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
   
 #halloweenButton {
     display: block;
